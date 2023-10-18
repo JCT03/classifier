@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classifier.ClassifierController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0">
+         <children>
+            <VBox alignment="CENTER">
+               <children>
+                  <Label text="LLM Essay Validator">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="essayInput" prefHeight="200.0" prefWidth="1000.0" promptText="Enter essay here" wrapText="true" />
+                  <Button alignment="TOP_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#evaluate" text="Validate Essay">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin></Button>
+                  <HBox alignment="TOP_CENTER">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefWidth="500.0">
+                           <children>
+                              <Label alignment="TOP_CENTER" text="Letter Transition Model Probabilities" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="letterStudent" alignment="TOP_CENTER" text="Student: 50%">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Label>
+                              <Label fx:id="letterLLM" text="LLM: 50%">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Label>
+                              <Label text="Reference Transition Matrix">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="letterReferenceMatrix">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Input Transition Matrix">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="letterInputMatrix">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefWidth="500.0">
+                           <children>
+                              <Label text="Letter Type Transition Model Probabilitites">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="typeStudent" text="Student: 50%">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Label>
+                              <Label fx:id="typeLLM" text="LLM: 50%">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Label>
+                              <Label text="Reference Transition Matrix">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="typeReferenceMatrix" />
+                              <Label text="Input Transition Matrix">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="typeInputMatrix">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

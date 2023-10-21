@@ -48,7 +48,7 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="letterReferenceMatrix">
+                              <Label fx:id="letterReferenceMatrix" lineSpacing="0.5" wrapText="true">
                                  <font>
                                     <Font size="10.0" />
                                  </font>
@@ -58,7 +58,7 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="letterInputMatrix">
+                              <Label fx:id="letterInputMatrix" lineSpacing="0.5" wrapText="true">
                                  <font>
                                     <Font size="10.0" />
                                  </font>
@@ -85,13 +85,13 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="typeReferenceMatrix" />
+                              <Label fx:id="typeReferenceMatrix" lineSpacing="0.5" />
                               <Label text="Input Transition Matrix">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="typeInputMatrix">
+                              <Label fx:id="typeInputMatrix" lineSpacing="0.5">
                                  <font>
                                     <Font size="10.0" />
                                  </font>
